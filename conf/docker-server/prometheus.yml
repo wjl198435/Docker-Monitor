@@ -32,7 +32,7 @@ scrape_configs:
   # 后期追加mysql监控
   - job_name: 'uat-mysql'
     static_configs:
-      - targets: ['localhost:9104']
+      - targets: ['192.168.8.102:3306']
 
   # 后期追加机器监控
   - job_name: 'node-monitor'
